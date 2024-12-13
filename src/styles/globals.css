@@ -1,0 +1,293 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'Manrope-Bold';
+  src: url('../../public/fonts/Manrope-Bold.woff2') format('woff2'),
+    url('../../public/fonts/Manrope-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Manrope';
+  src: url('../../public/fonts/Manrope-Regular.woff2') format('woff2'),
+    url('../../public/fonts/Manrope-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Manrope-Light';
+  src: url('../../public/fonts/Manrope-Light.woff2') format('woff2'),
+    url('../../public/fonts/Manrope-Light.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Manrope-Medium';
+  src: url('../../public/fonts/Manrope-Medium.woff2') format('woff2'),
+    url('../../public/fonts/Manrope-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Manrope-SamiBold';
+  src: url('../../public/fonts/Manrope-SemiBold.woff2') format('woff2'),
+    url('../../public/fonts/Manrope-SemiBold.woff') format('woff');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Manrope', sans-serif !important;
+}
+
+body,
+p,
+html {
+  font-family: 'Manrope', sans-serif;
+}
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+.container {
+  width: 100%;
+}
+
+@media (min-width: 640px) {
+  .container {
+    max-width: 640px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+
+  .dtable:nth-child(odd) {
+    background: #fafafa;
+    border-top: 1px solid #dedede !important;
+    border-bottom: 1px solid #dedede !important;
+    border-right: 0px solid #dedede !important;
+    border-left: 0px solid #dedede !important;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    max-width: 1024px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .container {
+    max-width: 1110px;
+  }
+}
+
+@media (min-width: 1536px) {
+  .container {
+    max-width: 1110px;
+  }
+}
+
+.custom-loader {
+  width: 100px;
+  height: 100px;
+  display: grid;
+  border: 8px solid #0000;
+  border-radius: 50%;
+  border-color: #ffffff #0000;
+  animation: s6 1s infinite linear;
+}
+
+.custom-loader::before,
+.custom-loader::after {
+  content: '';
+  grid-area: 1/1;
+  margin: 4px;
+  border: inherit;
+  border-radius: 50%;
+}
+
+.custom-loader::before {
+  border-color: #ffa500 #0000;
+  animation: inherit;
+  animation-duration: 0.5s;
+  animation-direction: reverse;
+}
+
+.custom-loader::after {
+  margin: 16px;
+}
+
+@keyframes s6 {
+  100% {
+    transform: rotate(1turn);
+  }
+}
+
+.features p {
+  font-size: 22px;
+  line-height: 28px;
+  margin-bottom: 16px;
+  margin-top: 16px;
+}
+.features ul li {
+  font-size: 20px;
+  line-height: 28px;
+}
+
+.features ul {
+  list-style: none;
+}
+
+.features ul li:before {
+  content: '✓';
+  width: 20px;
+  display: inline-block;
+}
+
+.block_heading {
+  font-size: 28px;
+  line-height: 32px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-family: 'Manrope-Medium';
+}
+
+.block_content p {
+  font-size: 18px;
+  line-height: 24px;
+  margin-bottom: 15px;
+}
+
+.block_content ul li {
+  font-size: 16px;
+  line-height: 24px;
+  margin-bottom: 6px;
+  list-style-type: disc;
+  list-style-position: inside;
+}
+
+.dtable:nth-child(odd) {
+  background: #fafafa;
+  border-top: 0;
+  border-bottom: 0;
+  border-right: 1px solid #dedede;
+  border-left: 1px solid #dedede;
+}
+
+.pros ul li,
+.cons ul li {
+  font-size: 16px;
+  list-style-type: none;
+  margin-bottom: 6px;
+}
+.pros ul li:before {
+  content: '✓';
+  border: 1px solid green;
+  color: green;
+  border-radius: 100%;
+  text-align: center;
+  margin-right: 10px;
+  width: 20px;
+  line-height: 20px;
+  display: inline-block;
+}
+.cons ul li:before {
+  content: '☓';
+  border: 1px solid red;
+  color: red;
+  border-radius: 100%;
+  text-align: center;
+  margin-right: 10px;
+  width: 20px;
+  line-height: 20px;
+  display: inline-block;
+}
+
+.slug_cta .serch_form {
+  padding: 0;
+  justify-content: center;
+}
+.slug_cta .serch_form svg {
+  left: 1.5rem;
+}
+.slug_cta .serch_form input {
+  max-width: 12rem;
+}
+
+.tch {
+  font-size: medium;
+  text-align: center;
+}
+.tcd {
+  font-size: larger;
+  text-align: center;
+  font-weight: bold;
+}
+
+.singlePost h4 {
+  font-size: 2rem;
+  line-height: 2.5rem;
+  font-weight: 700;
+
+  margin-bottom: 15px;
+}
+.singlePost ol {
+  list-style: decimal;
+}
+.singlePost ul {
+  list-style: disc;
+  list-style-position: inside;
+}
+.singlePost strong {
+  font-weight: bolder;
+
+}
+.singlePost p,
+li {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  margin-bottom: 12px;
+}
+.singlePost a {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 24px;
+  margin-bottom: 15px;
+  color: #ef9831;
+}
+.singlePost a:hover {
+  text-decoration: underline;
+  color: #215690;
+}

@@ -1,0 +1,35 @@
+User-agent: *
+Allow: /
+Disallow: /cgi-bin/
+Disallow: /?s={search_term_string}
+Disallow: /comments/feed/
+Disallow: /feed/
+
+Sitemap: https://www.cablemovers.net/pages-sitemap.xml
+Sitemap: https://www.cablemovers.net/providers-sitemap.xml
+Sitemap: https://www.cablemovers.net/blog-sitemap.xml
+Sitemap: https://www.cablemovers.net/states-sitemap.xml
+Sitemap: https://www.cablemovers.net/cities_1-sitemap.xml
+Sitemap: https://www.cablemovers.net/cities_2-sitemap.xml
+Sitemap: https://www.cablemovers.net/cities_3-sitemap.xml
+Sitemap: https://www.cablemovers.net/cities_4-sitemap.xml
+Sitemap: https://www.cablemovers.net/cities_5-sitemap.xml
+
+Sitemap: https://www.cablemovers.net/zipcode_internet_1-sitemap.xml
+Sitemap: https://www.cablemovers.net/zipcode_internet_2-sitemap.xml
+Sitemap: https://www.cablemovers.net/zipcode_internet_3-sitemap.xml
+Sitemap: https://www.cablemovers.net/zipcode_internet_4-sitemap.xml
+Sitemap: https://www.cablemovers.net/zipcode_internet_5-sitemap.xml
+
+Sitemap: https://www.cablemovers.net/zipcode_tv_1-sitemap.xml
+Sitemap: https://www.cablemovers.net/zipcode_tv_2-sitemap.xml
+Sitemap: https://www.cablemovers.net/zipcode_tv_3-sitemap.xml
+Sitemap: https://www.cablemovers.net/zipcode_tv_4-sitemap.xml
+Sitemap: https://www.cablemovers.net/zipcode_tv_5-sitemap.xml
+
+Sitemap: https://www.cablemovers.net/zipcode_internet-tv_1-sitemap.xml
+Sitemap: https://www.cablemovers.net/zipcode_internet-tv_2-sitemap.xml
+Sitemap: https://www.cablemovers.net/zipcode_internet-tv_3-sitemap.xml
+Sitemap: https://www.cablemovers.net/zipcode_internet-tv_4-sitemap.xml
+Sitemap: https://www.cablemovers.net/zipcode_internet-tv_5-sitemap.xml
+
